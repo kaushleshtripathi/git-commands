@@ -6,10 +6,6 @@
 # gray text
 @@ purple bold text @@
 ```
-$$\color{red}{This text is red}$$
-$$\color{green}{This text is green}$$
-$\textcolor{yellow}{Yellow text}$
-$\colorbox{green}{{\color{white}{White text on green}}}$
 
 - This line appears in bullet
 # This line appears in gray
@@ -59,8 +55,16 @@ git log: see history of commit
 git branch: list the branches
 git branch --all: list all branches local and remote
 git diff
-git remote -v
+git remote -v : Used to check remote repository name
 ```
+
+## Change remote repository name
+
+```sh
+git remote -v
+git remote add upstream https://github.com/kaushleshtripathi/employee-crud-react-ui-v1.git
+```
+
 ## Delete a branch
 ```sh
 git branch -d <branchName>
