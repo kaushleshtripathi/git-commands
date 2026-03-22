@@ -26,15 +26,15 @@ git push -u origin main
 ===========================================
 ```sh
 git init -b main
-## or
+@@ or
 git init
 git add .
-## or 
+@@ or 
 git add <file>: Add Specific file
 git commit -m "<message>"
 git remote add origin https://github.com/kaushleshtripathi/spring-batch-job.git
 git push -u origin HEAD:main
-## or
+@@ or
 git push -u origin main
 ```
 
@@ -43,19 +43,22 @@ git status
 git log: see history of commit
 git branch: list the branches
 git branch --all: list all branches local and remote
-git branch -d <branchName>: delete a branch
 git diff
 git remote -v
 ```
-
+## Delete a branch
 ```sh
+git branch -d <branchName>
+```
+
 ## Remove file
+```sh
 git rm --cached <filename>
 git commit -m "<message>"
 ```
 
-```sh
 ## Git Clone
+```sh
 git clone https://github.com/kaushleshtripathi/spring-batch-job.git --branch main
 ```
 
@@ -65,18 +68,27 @@ git tag -a v1.0 -m "<message>"
 git push origin v1.0
 ```
 
+## Create a new branch
 ```sh
-git switch -c <branchName>: create a new branch
-git switch <branchName>: switch to a branch
+git switch -c <branchName>
+or
+git checkout -b <branchName>
+```
+## Switch to a branch
+```sh
+git switch <branchName>
+or
+git checkout <branchName>
 ```
 
+## Merge changes from main to feature
 ```sh
-## Merge
 git pull origin main
 git switch main
 git merge feature: this will merge changes from main to feature branch
 ```
 
+## Save changes without commiting
 ```sh
 git stash: Save changes without commiting
 git stash list
