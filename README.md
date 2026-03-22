@@ -1,5 +1,20 @@
-# git-commands
 
+```diff
+- red text
++ green text
+! orange text
+# gray text
+@@ purple bold text @@
+```
+$$\color{red}{This text is red}$$
+$$\color{green}{This text is green}$$
+$\textcolor{yellow}{Yellow text}$
+$\colorbox{green}{{\color{white}{White text on green}}}$
+
+- This line appears in bullet
+# This line appears in gray
+
+# git-commands
 
 ```sh
 docker-compose up -d --build
@@ -62,8 +77,8 @@ git commit -m "<message>"
 git clone https://github.com/kaushleshtripathi/spring-batch-job.git --branch main
 ```
 
-```sh
 ## Git Version
+```sh
 git tag -a v1.0 -m "<message>"
 git push origin v1.0
 ```
