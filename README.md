@@ -6,9 +6,8 @@
 # gray text
 @@ purple bold text @@
 ```
-
 - This line appears in bullet
-# This line appears in gray
+
 
 # git-commands
 
